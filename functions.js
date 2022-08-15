@@ -58,8 +58,12 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 F. getMultipleLengths
 
-let getMultipleLengths = ( name ) => {
-    return name.lenght
+let getMultipleLengths = ( words ) => {
+   let lengthsArray = [] 
+   for ( let word of words){
+    lengthsArray.push(word.length)
+   }
+   return lengthsArray
 } ;
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
@@ -77,7 +81,19 @@ console.log(maxOfThree(6, 9, 1));
 /////////////////////////////////////
 H. printLongestWord
 
+
 let printLongestWord = ( names ) => {
-    return findlongestword(names)
+    let longestWord = " "
+    let longestNum = 0
+
+    for ( let word of names){
+        // check length of word word.legnth
+        if length of word is > longest num
+        set longest num = length
+        set longest word = word
+    }
+    return longest word 
 }
-console.log(printLongestWord("BoJack"));
+
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
