@@ -32,17 +32,17 @@ console.log(calculateCube(5));
 /////////////////////////////////
 D. isVowel
 
-let isVowel = function => {
+let isVowel = (char)  => {
+    char = char.toUpperCase()
+    if (char === 'A' || char === 'E' || char === 'I' || char === 'O' || char === 'U') {
+      return true
+    } else {
+      return false
+    }
+  }
+  console.log(isVowel('e'))
 
-    let vowels = [ "a", "e", "i", "o", "u"]
 
-     if (letter === i) {
-    return  true  }
-    else {
-    return false }
-};
-
-console.log(isVowel("w"));
 
 
 ////////////////////////////////////
@@ -86,7 +86,7 @@ let names = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "
 const printLongestWord = (words) => {
 let longestWord = ' ';
 let longestNum = 0;
-for ( Let word of words){
+for ( let word of words){
     if (word.length > longestNum) {
         longestWord = word;
         longestNum = word.length;
