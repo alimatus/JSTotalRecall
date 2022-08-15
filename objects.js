@@ -211,3 +211,25 @@ const user = {
     for (let i=0; i < user.friend.purchased.length; i++){
         console.log(user.friend.purchased[i])
     }
+
+
+
+    /////////////////////////////////////
+    G. Functions can operate on objects
+    
+    const updatedUser = () => {
+        user.age++;
+        user.name.toUpperCase()
+    }
+    console.log(user.age)
+    console.log(user.name.toUpperCase())
+    //2. write a function old and loud that performs that exact same tasks
+    //as update user, but instead of hard-coding it to only work on our
+    // user obj, make it take a parameter person and have it modify the
+    //obj that is passed in as an argument when the function is called.  call
+    //your oldAndLoud function with user as the argument.
+    const oldAndLoud = (person) =>  {
+        user.age++;
+        user.name.toUpperCase()
+    }
+    oldAndLoud(user)
