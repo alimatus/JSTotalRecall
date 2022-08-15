@@ -81,19 +81,19 @@ console.log(maxOfThree(6, 9, 1));
 /////////////////////////////////////
 H. printLongestWord
 
+let names = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]
 
-let printLongestWord = ( names ) => {
-    let longestWord = " "
-    let longestNum = 0
-
-    for ( let word of names){
-        // check length of word word.legnth
-        if length of word is > longest num
-        set longest num = length
-        set longest word = word
+const printLongestWord = (words) => {
+let longestWord = ' ';
+let longestNum = 0;
+for ( Let word of words){
+    if (word.length > longestNum) {
+        longestWord = word;
+        longestNum = word.length;
     }
-    return longest word 
 }
+  return longestWord;
+}
+console.log(printLongestWord (names))
 
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
